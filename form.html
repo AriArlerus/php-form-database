@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit User Data</title>
+</head>
+<body>
+    <h1>Submit User Information</h1>
+    
+    <!-- สร้างฟอร์มสำหรับกรอกข้อมูล -->
+    <!-- method="POST" หมายถึงส่งข้อมูลผ่าน POST (ปลอดภัยกว่าการใช้ GET) -->
+    <form action="submit.php" method="POST"> 
+        <!-- ช่องกรอกชื่อ -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br> 
+        <!-- required หมายถึงบังคับให้กรอก -->
+        
+        <!-- ช่องกรอกอีเมล -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <!-- ปุ่มสำหรับส่งข้อมูล -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
